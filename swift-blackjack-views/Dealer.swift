@@ -5,7 +5,7 @@ import Foundation
 class Dealer {
     let deck = Deck()
     let house = House(name: "House")
-    let player = House(name: "Player")
+    let player = Player(name: "Player")
     var bet: UInt = 0
     
     func placeBet(bet: UInt) -> Bool {
