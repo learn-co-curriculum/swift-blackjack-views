@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BlackjackViewController.swift
 //  swift-blackjack-views
 //
 //  Created by Mark Murray on 10/19/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BlackjackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

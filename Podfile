@@ -4,9 +4,9 @@ platform :ios, '9.0'
 use_frameworks!
 
 def testing_pods
-  pod 'Quick', '~> 0.6.0'
-  pod 'Nimble', '2.0.0-rc.2'
-  pod 'KIF', '~> 3.3.0'
+  pod 'Quick', '~> 0.6'
+  pod 'Nimble', '~> 2.0'
+  pod 'KIF', '~> 3.3'
 end
 
 target 'swift-blackjack-views' do
