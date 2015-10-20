@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BD006E74344398DCC6BA816 /* Pods_swift_blackjack_viewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEA66AC4A3426BE5CCF1327 /* Pods_swift_blackjack_viewsTests.framework */; };
+		4D1320291BD6DB1D00331042 /* KIF-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1320281BD6DB1D00331042 /* KIF-Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		4DA5423E1BD5802200EBBC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5423D1BD5802200EBBC17 /* AppDelegate.swift */; };
 		4DA542401BD5802200EBBC17 /* BlackjackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5423F1BD5802200EBBC17 /* BlackjackViewController.swift */; };
 		4DA542431BD5802200EBBC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA542411BD5802200EBBC17 /* Main.storyboard */; };
@@ -25,18 +26,19 @@
 		4DA5427C1BD5871300EBBC17 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542771BD5871300EBBC17 /* DeckSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		4DA5427D1BD5871300EBBC17 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542781BD5871300EBBC17 /* HouseSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		4DA5427E1BD5871300EBBC17 /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542791BD5871300EBBC17 /* PlayerSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		4DA5428C1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5428B1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		CF154D0E54C35817BB7C2904 /* Pods_swift_blackjack_viewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18715D38E439CAFCB64F642F /* Pods_swift_blackjack_viewsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4DA5424F1BD5802200EBBC17 /* PBXContainerItemProxy */ = {
+		4DA5425A1BD5802200EBBC17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DA542321BD5802200EBBC17 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4DA542391BD5802200EBBC17;
 			remoteInfo = "swift-blackjack-views";
 		};
-		4DA5425A1BD5802200EBBC17 /* PBXContainerItemProxy */ = {
+		4DA542871BD6BBE400EBBC17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DA542321BD5802200EBBC17 /* Project object */;
 			proxyType = 1;
@@ -48,6 +50,7 @@
 /* Begin PBXFileReference section */
 		18715D38E439CAFCB64F642F /* Pods_swift_blackjack_viewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_blackjack_viewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DA83D734D649E703E54B88 /* Pods-swift-blackjack-viewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-blackjack-viewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-blackjack-viewsTests/Pods-swift-blackjack-viewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D1320281BD6DB1D00331042 /* KIF-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF-Extensions.swift"; sourceTree = "<group>"; };
 		4DA5423A1BD5802200EBBC17 /* swift-blackjack-views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-blackjack-views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA5423D1BD5802200EBBC17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA5423F1BD5802200EBBC17 /* BlackjackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackjackViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 		4DA542771BD5871300EBBC17 /* DeckSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSpec.swift; sourceTree = "<group>"; };
 		4DA542781BD5871300EBBC17 /* HouseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseSpec.swift; sourceTree = "<group>"; };
 		4DA542791BD5871300EBBC17 /* PlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSpec.swift; sourceTree = "<group>"; };
+		4DA542811BD6B20E00EBBC17 /* KIF-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KIF-Bridging-Header.h"; path = "../swift-blackjack-viewsUITests/KIF-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DA5428B1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackViewControllerSpec.swift; sourceTree = "<group>"; };
 		6CEA66AC4A3426BE5CCF1327 /* Pods_swift_blackjack_viewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_blackjack_viewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745346217B76A5A32AE90EB2 /* Pods-swift-blackjack-viewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-blackjack-viewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-blackjack-viewsUITests/Pods-swift-blackjack-viewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF3233B831C0F206FAF8D2A1 /* Pods-swift-blackjack-viewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-blackjack-viewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-blackjack-viewsTests/Pods-swift-blackjack-viewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +172,10 @@
 		4DA542511BD5802200EBBC17 /* swift-blackjack-viewsTests */ = {
 			isa = PBXGroup;
 			children = (
+				4DA542811BD6B20E00EBBC17 /* KIF-Bridging-Header.h */,
+				4D1320281BD6DB1D00331042 /* KIF-Extensions.swift */,
 				4DA542521BD5802200EBBC17 /* swift_blackjack_viewsTests.swift */,
+				4DA5428B1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift */,
 				4DA542761BD5871300EBBC17 /* DealerSpec.swift */,
 				4DA542791BD5871300EBBC17 /* PlayerSpec.swift */,
 				4DA542781BD5871300EBBC17 /* HouseSpec.swift */,
@@ -221,7 +229,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4DA542501BD5802200EBBC17 /* PBXTargetDependency */,
+				4DA542881BD6BBE400EBBC17 /* PBXTargetDependency */,
 			);
 			name = "swift-blackjack-viewsTests";
 			productName = "swift-blackjack-viewsTests";
@@ -414,11 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA5428C1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift in Sources */,
 				4DA5427A1BD5871300EBBC17 /* CardSpec.swift in Sources */,
 				4DA5427B1BD5871300EBBC17 /* DealerSpec.swift in Sources */,
 				4DA5427D1BD5871300EBBC17 /* HouseSpec.swift in Sources */,
 				4DA542531BD5802200EBBC17 /* swift_blackjack_viewsTests.swift in Sources */,
 				4DA5427C1BD5871300EBBC17 /* DeckSpec.swift in Sources */,
+				4D1320291BD6DB1D00331042 /* KIF-Extensions.swift in Sources */,
 				4DA5427E1BD5871300EBBC17 /* PlayerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,15 +444,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4DA542501BD5802200EBBC17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DA542391BD5802200EBBC17 /* swift-blackjack-views */;
-			targetProxy = 4DA5424F1BD5802200EBBC17 /* PBXContainerItemProxy */;
-		};
 		4DA5425B1BD5802200EBBC17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DA542391BD5802200EBBC17 /* swift-blackjack-views */;
 			targetProxy = 4DA5425A1BD5802200EBBC17 /* PBXContainerItemProxy */;
+		};
+		4DA542881BD6BBE400EBBC17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA542391BD5802200EBBC17 /* swift-blackjack-views */;
+			targetProxy = 4DA542871BD6BBE400EBBC17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
