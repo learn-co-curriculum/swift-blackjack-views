@@ -25,7 +25,7 @@ class DeckSpec: QuickSpec {
                 it("should return the King of Clubs from a fresh deck") {
                     let card = deck.drawCard()
                     
-                    expect(card.cardLabel).to(match("♣︎K"))
+                    expect(card.cardLabel).to(match("♣️K"))
                 }
             }
             
@@ -36,9 +36,9 @@ class DeckSpec: QuickSpec {
                     let card2 = deck.drawCard()
                     let card3 = deck.drawCard()
                     
-                    if card1.cardLabel == "♣︎K" && card2.cardLabel == "♣︎Q" {
+                    if card1.cardLabel == "♣️K" && card2.cardLabel == "♣️Q" {
                         // this test has a 1 in 132,600 chance of randomly failing
-                        expect(card3.cardLabel).notTo(match("♣︎J"))
+                        expect(card3.cardLabel).notTo(match("♣️J"))
                     }
                 }
             }

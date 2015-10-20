@@ -80,13 +80,13 @@ class DealerSpec: QuickSpec {
                     let card2 = dealer.deck.drawCard()
                     let card3 = dealer.deck.drawCard()
                     
-                    if card1.cardLabel == "♣︎K" && card2.cardLabel == "♣︎Q" {
+                    if card1.cardLabel == "♣️K" && card2.cardLabel == "♣️Q" {
                         // this test has a 1 in 132,600 chance of randomly failing
-                        expect(card3.cardLabel).toNot(match("♣︎J"))
+                        expect(card3.cardLabel).toNot(match("♣️J"))
                     }
-                    if card1.cardLabel == "♠︎A" && card2.cardLabel == "♠︎2" {
+                    if card1.cardLabel == "♠️A" && card2.cardLabel == "♠️2" {
                         // this test has a 1 in 132,600 chance of randomly failing
-                        expect(card3.cardLabel).toNot(match("♠︎3"))
+                        expect(card3.cardLabel).toNot(match("♠️3"))
                     }
                 }
             }

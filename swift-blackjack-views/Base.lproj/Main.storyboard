@@ -240,7 +240,7 @@
                         <outlet property="deal" destination="ah4-9X-lXP" id="BJY-cO-ceQ"/>
                         <outlet property="hit" destination="Ra6-Lx-heH" id="YbI-UU-1XI"/>
                         <outlet property="houseBlackjack" destination="o2I-uD-oQl" id="iuM-ZB-3gv"/>
-                        <outlet property="houseBusted" destination="pW6-R2-I3W" id="LM2-p2-h6V"/>
+                        <outlet property="houseBusted" destination="pW6-R2-I3W" id="k6a-Rp-Zpg"/>
                         <outlet property="houseCard1" destination="MB7-5b-QZM" id="aBQ-0C-AUP"/>
                         <outlet property="houseCard2" destination="urs-V1-hLW" id="oPt-SH-lpJ"/>
                         <outlet property="houseCard3" destination="nXQ-iJ-OuQ" id="g6b-SZ-0di"/>

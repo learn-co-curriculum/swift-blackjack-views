@@ -6,7 +6,7 @@ class Dealer {
     let deck = Deck()
     let house = House(name: "House")
     let player = Player(name: "Player")
-    var bet: UInt = 0
+    var bet: UInt = 10
     
     func placeBet(bet: UInt) -> Bool {
         if house.canPlaceBet(bet) && player.canPlaceBet(bet) {
@@ -33,14 +33,14 @@ class Dealer {
     
     func turn(house: House) {
         if house.mayHit {
-            print("\(house.name)'s turn:")
+            //print("\(house.name)'s turn:")
             if house.mustHit {
                 house.cards.append(deck.drawCard())
-                print("\(house.name) hits!")
-                print(house)
+                //print("\(house.name) hits!")
+                //print(house)
             } else {
                 house.stayed = true
-                print("\(house.name) stays!")
+                //print("\(house.name) stays!")
             }
         }
     }

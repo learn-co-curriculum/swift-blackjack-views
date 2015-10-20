@@ -18,7 +18,7 @@ class Card {
     }
     
     class func validSuits() -> [String] {
-        return ["♠︎", "♥︎", "♦︎", "♣︎"]
+        return ["♠️", "♥️", "♦️", "♣️"]
     }
     
     class func validRanks() -> [String] {
