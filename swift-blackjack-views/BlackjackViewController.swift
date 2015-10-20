@@ -161,7 +161,10 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         }
         
         if !self.dealer.player.busted {
-            self.houseTurn()
+            self.dealer.turn(self.dealer.house)
+        }
+        if self.dealer.house.busted {
+            self.concludeRound()
         }
         self.updateViews()
     }
@@ -170,15 +173,6 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         self.dealer.player.stayed = true
         self.updateViews()
         self.concludeRound()
-    }
-    
-    // MARK: Turns
-    
-    private func houseTurn() {
-        self.dealer.turn(self.dealer.house)
-        if self.dealer.house.busted {
-            self.concludeRound()
-        }
     }
     
     // MARK: Conclude Round
@@ -202,7 +196,7 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
     private func finishHouseTurns() {
         for var i = self.dealer.house.cards.count; i < 5; i++ {
             if self.dealer.house.mayHit {
-                self.houseTurn()
+                self.dealer.turn(self.dealer.house)
             }
         }
     }
