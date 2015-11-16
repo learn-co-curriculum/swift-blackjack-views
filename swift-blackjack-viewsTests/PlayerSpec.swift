@@ -16,9 +16,9 @@ class PlayerSpec: QuickSpec {
             let tenOfDiamonds : Card = Card(suit: "♦︎", rank: "10")
             let twoOfClubs : Card = Card(suit: "♣︎", rank: "2")
 
-            beforeEach({ () -> () in
+            beforeEach {
                 player = Player(name: "Player")
-            })
+            }
             
             describe("initializer") {
                 it("sets the name property") {

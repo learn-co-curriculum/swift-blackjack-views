@@ -10,9 +10,9 @@ class DealerSpec: QuickSpec {
             
             var dealer = Dealer()
             
-            beforeEach({ () -> () in
+            beforeEach {
                 dealer = Dealer()
-            })
+            }
             
             describe("placeBet") {
                 it("should return true if the house and player can afford a bet of 10") {

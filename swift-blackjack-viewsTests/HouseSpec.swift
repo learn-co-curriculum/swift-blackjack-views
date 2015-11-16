@@ -14,9 +14,9 @@ class HouseSpec: QuickSpec {
             let sixOfClubs = Card(suit: "♣︎", rank: "6")
             let sevenOfClubs = Card(suit: "♣︎", rank: "7")
             
-            beforeEach({ () -> () in
+            beforeEach {
                 house = House(name: "House")
-            })
+            }
             
             describe("initializer") {
                 it("takes an argument for the name property") {

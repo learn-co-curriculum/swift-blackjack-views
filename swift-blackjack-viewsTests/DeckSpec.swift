@@ -10,14 +10,14 @@ class DeckSpec: QuickSpec {
             
             var deck : Deck = Deck()
             
-            beforeEach({ () -> () in
+            beforeEach {
                 deck = Deck()
-            })
+            }
             
             describe("initializer") {
                 it("should set up the deck with 52 undealt cards") {
-                    expect(deck.description).to(contain("Cards Remaining: 52"))
-                    expect(deck.description).to(contain("Cards Dealt: 0"))
+                    expect(deck.remainingCards.count).to(equal(52))
+                    expect(deck.dealtCards).to(beEmpty())
                 }
             }
             

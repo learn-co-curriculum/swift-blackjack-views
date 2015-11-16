@@ -3,8 +3,8 @@
 import Foundation
 
 class Deck {
-    var remainingCards : [Card]
-    var dealtCards : [Card]
+    private(set) var remainingCards : [Card]
+    private(set) var dealtCards : [Card]
     
     var description: String { return self.getDescription() }
     

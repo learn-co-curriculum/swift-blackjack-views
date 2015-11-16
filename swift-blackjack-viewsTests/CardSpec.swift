@@ -53,9 +53,17 @@ class CardSpec: QuickSpec {
             
             describe("validSuits") {
                 it("should be class property of an array with four suit icons") {
-                let expected = ["♠️", "♥️", "♦️", "♣️"]
+                    let expected = ["♠️", "♥️", "♦️", "♣️"]
                 
-                expect(Card.validSuits).to(equal(expected))
+                    expect(Card.validSuits).to(equal(expected))
+                }
+            }
+            
+            describe("validRanks") {
+                it("should be a class property of an array with thirteen Rank strings") {
+                    let expected = ["A", "2", "3" ,"4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+                    
+                    expect(Card.validRanks).to(equal(expected))
                 }
             }
         }

@@ -11,7 +11,7 @@ class BlackjackViewControllerSpec: QuickSpec {
         
         var blackjackVC = BlackjackViewController()
         
-        beforeEach { () -> () in
+        beforeEach {
             let main = UIStoryboard(name: "Main", bundle: nil)
             
             let vc = main.instantiateViewControllerWithIdentifier("blackjackVC")
