@@ -3,15 +3,15 @@
 import Foundation
 
 class Deck {
-    private var remainingCards : [Card]
-    private var dealtCards : [Card]
+    var remainingCards : [Card]
+    var dealtCards : [Card]
     
     var description: String { return self.getDescription() }
     
     init() {
         var cards : [Card] = []
-        for suit in Card.validSuits() {
-            for rank in Card.validRanks() {
+        for suit in Card.validSuits {
+            for rank in Card.validRanks {
                 let card = Card(suit: suit, rank: rank)
                 cards.append(card)
             }

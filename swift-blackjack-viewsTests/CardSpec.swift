@@ -50,6 +50,14 @@ class CardSpec: QuickSpec {
                     expect(twoOfClubs.description).to(equal("♣︎2"))
                 }
             }
+            
+            describe("validSuits") {
+                it("should be class property of an array with four suit icons") {
+                let expected = ["♠️", "♥️", "♦️", "♣️"]
+                
+                expect(Card.validSuits).to(equal(expected))
+                }
+            }
         }
     }
 }

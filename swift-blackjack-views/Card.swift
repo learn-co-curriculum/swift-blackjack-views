@@ -3,6 +3,9 @@
 import Foundation
 
 class Card {
+    static let validSuits = ["♠️", "♥️", "♦️", "♣️"]
+    static let validRanks = ["A", "2", "3" ,"4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+    
     let suit : String
     let rank : String
     private(set) var cardLabel = ""
@@ -17,14 +20,6 @@ class Card {
         self.cardValue = determineCardValue(rank)
     }
     
-    class func validSuits() -> [String] {
-        return ["♠️", "♥️", "♦️", "♣️"]
-    }
-    
-    class func validRanks() -> [String] {
-        return ["A", "2", "3" ,"4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-    }
-
     private func determineCardValue(rank: String) -> UInt {
         switch rank {
         case "A":
