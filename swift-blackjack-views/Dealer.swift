@@ -65,7 +65,7 @@ class Dealer {
         if player.cards.count == 5 && !player.busted {
             return "player"
         }
-        if house.stayed && player.stayed {
+        if (house.stayed || house.handscore == 21) && (player.stayed || player.handscore == 21) {
             if player.handscore > house.handscore {
                 return "player"
             } else {

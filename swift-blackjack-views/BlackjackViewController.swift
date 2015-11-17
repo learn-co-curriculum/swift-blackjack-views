@@ -77,7 +77,7 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         self.showActiveStatusLabels()
         self.updatePlayerScoreLabel()
         
-        if self.dealer.player.mayHit {
+        if self.hit.enabled {
             self.winner.hidden = true
             self.houseScore.hidden = true
         }
@@ -139,6 +139,11 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
     // MARK: IBActions
 
     @IBAction func dealTapped(sender: UIButton) {
+        if !self.dealer.placeBet(UInt(betTextField.text!)!) {
+            self.betTextField.text = "0"
+            return
+        }
+        
         self.betTextField.enabled = false
         self.deal.enabled = false
         self.hit.enabled = true
@@ -147,7 +152,7 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         self.dealer.deal()
         self.updateViews()
         
-        if !self.dealer.player.mayHit {
+        if !self.dealer.player.mayHit || self.dealer.house.busted {
             self.concludeRound()
         }
     }
@@ -158,14 +163,15 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         
         if !self.dealer.player.mayHit || self.dealer.player.handscore == 21 {
             self.concludeRound()
-        }
-        
-        if !self.dealer.player.busted {
+        } else {
             self.dealer.turn(self.dealer.house)
+            if self.dealer.house.busted {
+                self.concludeRound()
+            } else if self.dealer.house.stayed && self.dealer.player.stayed {
+                self.concludeRound()
+            }
         }
-        if self.dealer.house.busted {
-            self.concludeRound()
-        }
+
         self.updateViews()
     }
     
@@ -197,6 +203,8 @@ class BlackjackViewController: UIViewController, UITextFieldDelegate {
         for var i = self.dealer.house.cards.count; i < 5; i++ {
             if self.dealer.house.mayHit {
                 self.dealer.turn(self.dealer.house)
+            } else {
+                return
             }
         }
     }

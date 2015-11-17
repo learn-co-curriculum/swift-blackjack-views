@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BD006E74344398DCC6BA816 /* Pods_swift_blackjack_viewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEA66AC4A3426BE5CCF1327 /* Pods_swift_blackjack_viewsTests.framework */; };
-		4D1320291BD6DB1D00331042 /* KIF-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1320281BD6DB1D00331042 /* KIF-Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		4D1320291BD6DB1D00331042 /* KIF-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1320281BD6DB1D00331042 /* KIF-Extensions.swift */; };
 		4DA5423E1BD5802200EBBC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5423D1BD5802200EBBC17 /* AppDelegate.swift */; };
 		4DA542401BD5802200EBBC17 /* BlackjackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5423F1BD5802200EBBC17 /* BlackjackViewController.swift */; };
 		4DA542431BD5802200EBBC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA542411BD5802200EBBC17 /* Main.storyboard */; };
@@ -16,17 +16,17 @@
 		4DA542481BD5802200EBBC17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA542461BD5802200EBBC17 /* LaunchScreen.storyboard */; };
 		4DA542531BD5802200EBBC17 /* swift_blackjack_viewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542521BD5802200EBBC17 /* swift_blackjack_viewsTests.swift */; };
 		4DA5425E1BD5802200EBBC17 /* swift_blackjack_viewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5425D1BD5802200EBBC17 /* swift_blackjack_viewsUITests.swift */; };
-		4DA542701BD586EA00EBBC17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426B1BD586EA00EBBC17 /* Card.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA542711BD586EA00EBBC17 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426C1BD586EA00EBBC17 /* Dealer.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA542721BD586EA00EBBC17 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426D1BD586EA00EBBC17 /* Deck.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA542731BD586EA00EBBC17 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426E1BD586EA00EBBC17 /* House.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA542741BD586EA00EBBC17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426F1BD586EA00EBBC17 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5427A1BD5871300EBBC17 /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542751BD5871300EBBC17 /* CardSpec.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5427B1BD5871300EBBC17 /* DealerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542761BD5871300EBBC17 /* DealerSpec.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5427C1BD5871300EBBC17 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542771BD5871300EBBC17 /* DeckSpec.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5427D1BD5871300EBBC17 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542781BD5871300EBBC17 /* HouseSpec.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5427E1BD5871300EBBC17 /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542791BD5871300EBBC17 /* PlayerSpec.swift */; settings = {ASSET_TAGS = (); }; };
-		4DA5428C1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5428B1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		4DA542701BD586EA00EBBC17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426B1BD586EA00EBBC17 /* Card.swift */; };
+		4DA542711BD586EA00EBBC17 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426C1BD586EA00EBBC17 /* Dealer.swift */; };
+		4DA542721BD586EA00EBBC17 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426D1BD586EA00EBBC17 /* Deck.swift */; };
+		4DA542731BD586EA00EBBC17 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426E1BD586EA00EBBC17 /* House.swift */; };
+		4DA542741BD586EA00EBBC17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5426F1BD586EA00EBBC17 /* Player.swift */; };
+		4DA5427A1BD5871300EBBC17 /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542751BD5871300EBBC17 /* CardSpec.swift */; };
+		4DA5427B1BD5871300EBBC17 /* DealerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542761BD5871300EBBC17 /* DealerSpec.swift */; };
+		4DA5427C1BD5871300EBBC17 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542771BD5871300EBBC17 /* DeckSpec.swift */; };
+		4DA5427D1BD5871300EBBC17 /* HouseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542781BD5871300EBBC17 /* HouseSpec.swift */; };
+		4DA5427E1BD5871300EBBC17 /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA542791BD5871300EBBC17 /* PlayerSpec.swift */; };
+		4DA5428C1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5428B1BD6C22A00EBBC17 /* BlackjackViewControllerSpec.swift */; };
 		CF154D0E54C35817BB7C2904 /* Pods_swift_blackjack_viewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18715D38E439CAFCB64F642F /* Pods_swift_blackjack_viewsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -267,6 +267,7 @@
 				TargetAttributes = {
 					4DA542391BD5802200EBBC17 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4YFVWFGQC2;
 					};
 					4DA5424D1BD5802200EBBC17 = {
 						CreatedOnToolsVersion = 7.0;
@@ -561,11 +562,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "swift-blackjack-views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.swift-blackjack-views";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -573,11 +577,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "swift-blackjack-views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.swift-blackjack-views";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
